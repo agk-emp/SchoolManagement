@@ -1,0 +1,15 @@
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Infrastructure\bin\Debug\net8.0\SchoolProject.Infrastructure.deps.json
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Infrastructure\bin\Debug\net8.0\SchoolProject.Infrastructure.dll
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Infrastructure\bin\Debug\net8.0\SchoolProject.Infrastructure.pdb
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Infrastructure\bin\Debug\net8.0\SchoolProject.Data.dll
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Infrastructure\bin\Debug\net8.0\SchoolProject.Data.pdb
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Infrastructure\obj\Debug\net8.0\SchoolProject.Infrastructure.csproj.AssemblyReference.cache
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Infrastructure\obj\Debug\net8.0\SchoolProject.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Infrastructure\obj\Debug\net8.0\SchoolProject.Infrastructure.AssemblyInfoInputs.cache
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Infrastructure\obj\Debug\net8.0\SchoolProject.Infrastructure.AssemblyInfo.cs
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Infrastructure\obj\Debug\net8.0\SchoolProject.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Infrastructure\obj\Debug\net8.0\SchoolPr.D35C9431.Up2Date
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Infrastructure\obj\Debug\net8.0\SchoolProject.Infrastructure.dll
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Infrastructure\obj\Debug\net8.0\refint\SchoolProject.Infrastructure.dll
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Infrastructure\obj\Debug\net8.0\SchoolProject.Infrastructure.pdb
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Infrastructure\obj\Debug\net8.0\ref\SchoolProject.Infrastructure.dll

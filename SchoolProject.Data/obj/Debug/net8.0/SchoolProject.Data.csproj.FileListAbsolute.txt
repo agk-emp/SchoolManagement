@@ -1,0 +1,11 @@
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Data\bin\Debug\net8.0\SchoolProject.Data.deps.json
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Data\bin\Debug\net8.0\SchoolProject.Data.dll
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Data\bin\Debug\net8.0\SchoolProject.Data.pdb
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Data\obj\Debug\net8.0\SchoolProject.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Data\obj\Debug\net8.0\SchoolProject.Data.AssemblyInfoInputs.cache
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Data\obj\Debug\net8.0\SchoolProject.Data.AssemblyInfo.cs
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Data\obj\Debug\net8.0\SchoolProject.Data.csproj.CoreCompileInputs.cache
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Data\obj\Debug\net8.0\SchoolProject.Data.dll
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Data\obj\Debug\net8.0\refint\SchoolProject.Data.dll
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Data\obj\Debug\net8.0\SchoolProject.Data.pdb
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Data\obj\Debug\net8.0\ref\SchoolProject.Data.dll
