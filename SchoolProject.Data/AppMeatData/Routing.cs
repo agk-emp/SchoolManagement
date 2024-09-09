@@ -15,6 +15,7 @@
 
             public const string GetAll=studentVersionOneRoute+"GetAllStudents";
             public const string GetById = studentVersionOneRoute + singleRoute;
+            public const string Create = studentVersionOneRoute + "Create";
         }
     }
 }

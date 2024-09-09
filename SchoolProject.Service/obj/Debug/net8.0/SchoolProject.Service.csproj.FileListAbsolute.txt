@@ -15,3 +15,4 @@ C:\Ghani\CVProjects\SchoolProject\SchoolProject.Service\obj\Debug\net8.0\SchoolP
 C:\Ghani\CVProjects\SchoolProject\SchoolProject.Service\obj\Debug\net8.0\refint\SchoolProject.Service.dll
 C:\Ghani\CVProjects\SchoolProject\SchoolProject.Service\obj\Debug\net8.0\SchoolProject.Service.pdb
 C:\Ghani\CVProjects\SchoolProject\SchoolProject.Service\obj\Debug\net8.0\ref\SchoolProject.Service.dll
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Service\obj\Debug\net8.0\SchoolProject.Service.sourcelink.json

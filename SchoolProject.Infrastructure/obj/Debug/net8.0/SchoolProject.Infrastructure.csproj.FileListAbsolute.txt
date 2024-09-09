@@ -13,3 +13,4 @@ C:\Ghani\CVProjects\SchoolProject\SchoolProject.Infrastructure\obj\Debug\net8.0\
 C:\Ghani\CVProjects\SchoolProject\SchoolProject.Infrastructure\obj\Debug\net8.0\refint\SchoolProject.Infrastructure.dll
 C:\Ghani\CVProjects\SchoolProject\SchoolProject.Infrastructure\obj\Debug\net8.0\SchoolProject.Infrastructure.pdb
 C:\Ghani\CVProjects\SchoolProject\SchoolProject.Infrastructure\obj\Debug\net8.0\ref\SchoolProject.Infrastructure.dll
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Infrastructure\obj\Debug\net8.0\SchoolProject.Infrastructure.sourcelink.json

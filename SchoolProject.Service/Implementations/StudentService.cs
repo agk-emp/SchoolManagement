@@ -15,6 +15,20 @@ namespace SchoolProject.Service.Implementations
             _studentRepository = studentRepository;
         }
 
+        public async Task<string> AddStudent(Student student)
+        {
+            var studentChecker=await _studentRepository.GetTableNoTracking()
+                .FirstOrDefaultAsync(stud=>stud.Name == student.Name);
+
+            if (studentChecker is not null)
+            {
+                return $"Already exists";
+            }
+
+            await _studentRepository.AddAsync(student);
+            return "The student was added successfully";
+        }
+
         public async Task<List<Student>> GetAllStudentsAsync()
         {
             return await _studentRepository.GetAllStudentsAsync();

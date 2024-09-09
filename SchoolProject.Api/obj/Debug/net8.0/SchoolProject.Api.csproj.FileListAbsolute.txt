@@ -146,3 +146,4 @@ C:\Ghani\CVProjects\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\refint\Scho
 C:\Ghani\CVProjects\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\SchoolProject.Api.pdb
 C:\Ghani\CVProjects\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\SchoolProject.Api.genruntimeconfig.cache
 C:\Ghani\CVProjects\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\ref\SchoolProject.Api.dll
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\SchoolProject.Api.sourcelink.json

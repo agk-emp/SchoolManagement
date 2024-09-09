@@ -52,5 +52,25 @@ namespace SchoolProject.Core.Bases
                 Message = "Added successfully",
             };
         }
+
+        public Response<T> Created<T>()
+        {
+            return new Response<T>()
+            {
+                StatusCode = HttpStatusCode.Created,
+                Succeeded = true,
+                Message = "Added successfully",
+            };
+        }
+
+        public Response<T> UnprocessableEntity<T>(string message="Unable to process this entity")
+        {
+            return new Response<T>()
+            {
+                Message = message,
+                StatusCode = HttpStatusCode.UnprocessableEntity,
+                Succeeded = false,
+            };
+        }
     }
 }
