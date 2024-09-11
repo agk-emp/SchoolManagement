@@ -1,6 +1,7 @@
+using SchoolProject.Core;
+using SchoolProject.Core.Middlewares;
 using SchoolProject.Infrastructure;
 using SchoolProject.Service;
-using SchoolProject.Core;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,6 +30,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseMiddleware<ErrorHandlingMiddleware>();
 
 app.MapControllers();
 

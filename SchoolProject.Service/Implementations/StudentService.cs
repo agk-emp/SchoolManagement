@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SchoolProject.Data.Entities;
 using SchoolProject.Infrastructure.Abstracts;
-using SchoolProject.Infrastructure.Context;
 using SchoolProject.Service.Abstracts;
 
 namespace SchoolProject.Service.Implementations
@@ -17,16 +16,20 @@ namespace SchoolProject.Service.Implementations
 
         public async Task<string> AddStudent(Student student)
         {
-            var studentChecker=await _studentRepository.GetTableNoTracking()
-                .FirstOrDefaultAsync(stud=>stud.Name == student.Name);
-
-            if (studentChecker is not null)
-            {
-                return $"Already exists";
-            }
-
             await _studentRepository.AddAsync(student);
             return "The student was added successfully";
+        }
+
+        public async Task<bool> DoesExistWithName(string name)
+        {
+            var studentChecker = await _studentRepository.GetTableNoTracking()
+                .FirstOrDefaultAsync(stud => stud.Name == name);
+
+            if (studentChecker is null)
+            {
+                return false;
+            }
+            return true;
         }
 
         public async Task<List<Student>> GetAllStudentsAsync()
@@ -36,9 +39,9 @@ namespace SchoolProject.Service.Implementations
 
         public async Task<Student> GetStudentById(int id)
         {
-            var student=await _studentRepository.GetTableNoTracking()
-                .Include(s=>s.Department)
-                .Where(s=>s.StudID==id)
+            var student = await _studentRepository.GetTableNoTracking()
+                .Include(s => s.Department)
+                .Where(s => s.StudID == id)
                 .FirstOrDefaultAsync();
 
             return student;

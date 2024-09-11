@@ -147,3 +147,6 @@ C:\Ghani\CVProjects\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\SchoolProje
 C:\Ghani\CVProjects\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\SchoolProject.Api.genruntimeconfig.cache
 C:\Ghani\CVProjects\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\ref\SchoolProject.Api.dll
 C:\Ghani\CVProjects\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\SchoolProject.Api.sourcelink.json
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Api\bin\Debug\net8.0\FluentValidation.dll
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Api\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Api\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
