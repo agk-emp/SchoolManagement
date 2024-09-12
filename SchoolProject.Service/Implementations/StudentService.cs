@@ -20,10 +20,29 @@ namespace SchoolProject.Service.Implementations
             return "The student was added successfully";
         }
 
+        public async Task<string> EditStudent(Student student)
+        {
+            await _studentRepository.UpdateAsync(student);
+            return "The student was updated successfully";
+        }
+
         public async Task<bool> DoesExistWithName(string name)
         {
             var studentChecker = await _studentRepository.GetTableNoTracking()
                 .FirstOrDefaultAsync(stud => stud.Name == name);
+
+            if (studentChecker is null)
+            {
+                return false;
+            }
+            return true;
+        }
+
+        public async Task<bool> DoesExistWithNameExcludeSelf(string name, int id)
+        {
+            var studentChecker = await _studentRepository.GetTableNoTracking()
+                .FirstOrDefaultAsync(stud => stud.Name == name &&
+                stud.StudID != id);
 
             if (studentChecker is null)
             {
