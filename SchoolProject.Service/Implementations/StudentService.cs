@@ -65,5 +65,17 @@ namespace SchoolProject.Service.Implementations
 
             return student;
         }
+
+        public async Task<string> DeleteStudent(Student student)
+        {
+            await _studentRepository.DeleteAsync(student);
+            return "The student was deleted successfully";
+        }
+
+        public async Task<Student> GetStudentWithoutInclude(int id)
+        {
+            var student = await _studentRepository.GetByIdAsync(id);
+            return student;
+        }
     }
 }

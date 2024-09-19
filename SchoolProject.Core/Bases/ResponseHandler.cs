@@ -6,7 +6,7 @@ namespace SchoolProject.Core.Bases
     {
         public ResponseHandler()
         {
-            
+
         }
 
         public Response<T> Success<T>(T entity, object Meta = null)
@@ -63,13 +63,23 @@ namespace SchoolProject.Core.Bases
             };
         }
 
-        public Response<T> UnprocessableEntity<T>(string message="Unable to process this entity")
+        public Response<T> UnprocessableEntity<T>(string message = "Unable to process this entity")
         {
             return new Response<T>()
             {
                 Message = message,
                 StatusCode = HttpStatusCode.UnprocessableEntity,
                 Succeeded = false,
+            };
+        }
+
+        public Response<T> Deleted<T>()
+        {
+            return new Response<T>()
+            {
+                StatusCode = HttpStatusCode.OK,
+                Succeeded = true,
+                Message = "Deleted successfully",
             };
         }
     }

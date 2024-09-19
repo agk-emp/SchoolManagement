@@ -17,6 +17,7 @@
             public const string GetById = studentVersionOneRoute + singleRoute;
             public const string Create = studentVersionOneRoute + "Create";
             public const string Update = studentVersionOneRoute + "Update/" + singleRoute;
+            public const string Delete = studentVersionOneRoute + "Delete/" + singleRoute;
         }
     }
 }

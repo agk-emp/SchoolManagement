@@ -3,56 +3,80 @@
   "WorkspaceRootPath": "C:\\Ghani\\CVProjects\\SchoolProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|c:\\ghani\\cvprojects\\schoolproject\\schoolproject.core\\features\\students\\commands\\models\\editstudentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|solutionrelative:schoolproject.core\\features\\students\\commands\\models\\editstudentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|c:\\ghani\\cvprojects\\schoolproject\\schoolproject.core\\features\\students\\queries\\handlers\\studentqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|solutionrelative:schoolproject.core\\features\\students\\queries\\handlers\\studentqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|c:\\ghani\\cvprojects\\schoolproject\\schoolproject.core\\mapping\\students\\command\\editstudentcommandmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|solutionrelative:schoolproject.core\\mapping\\students\\command\\editstudentcommandmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|c:\\ghani\\cvprojects\\schoolproject\\schoolproject.core\\features\\students\\queries\\models\\getstudentspaginatedquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|solutionrelative:schoolproject.core\\features\\students\\queries\\models\\getstudentspaginatedquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|c:\\ghani\\cvprojects\\schoolproject\\schoolproject.core\\features\\students\\validations\\editstudentvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|solutionrelative:schoolproject.core\\features\\students\\validations\\editstudentvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|c:\\ghani\\cvprojects\\schoolproject\\schoolproject.core\\features\\students\\queries\\results\\getstudentspaginated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|solutionrelative:schoolproject.core\\features\\students\\queries\\results\\getstudentspaginated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|c:\\ghani\\cvprojects\\schoolproject\\schoolproject.core\\features\\students\\validations\\addstudentvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|solutionrelative:schoolproject.core\\features\\students\\validations\\addstudentvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|c:\\ghani\\cvprojects\\schoolproject\\schoolproject.core\\features\\students\\commands\\models\\editstudentcommandbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|solutionrelative:schoolproject.core\\features\\students\\commands\\models\\editstudentcommandbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|c:\\ghani\\cvprojects\\schoolproject\\schoolproject.core\\mapping\\students\\command\\addstudentcommandmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|solutionrelative:schoolproject.core\\mapping\\students\\command\\addstudentcommandmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{738F0D9E-B047-4C0F-BFA9-620791B4BC93}|SchoolProject.Service\\SchoolProject.Service.csproj|c:\\ghani\\cvprojects\\schoolproject\\schoolproject.service\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{738F0D9E-B047-4C0F-BFA9-620791B4BC93}|SchoolProject.Service\\SchoolProject.Service.csproj|solutionrelative:schoolproject.service\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{738F0D9E-B047-4C0F-BFA9-620791B4BC93}|SchoolProject.Service\\SchoolProject.Service.csproj|c:\\ghani\\cvprojects\\schoolproject\\schoolproject.service\\abstracts\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{738F0D9E-B047-4C0F-BFA9-620791B4BC93}|SchoolProject.Service\\SchoolProject.Service.csproj|solutionrelative:schoolproject.service\\abstracts\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|c:\\ghani\\cvprojects\\schoolproject\\schoolproject.core\\features\\students\\commands\\handlers\\studentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|solutionrelative:schoolproject.core\\features\\students\\commands\\handlers\\studentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F33C92A1-C1E6-4C50-8A7B-771DD36784EF}|SchoolProject.Api\\SchoolProject.Api.csproj|c:\\ghani\\cvprojects\\schoolproject\\schoolproject.api\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F33C92A1-C1E6-4C50-8A7B-771DD36784EF}|SchoolProject.Api\\SchoolProject.Api.csproj|solutionrelative:schoolproject.api\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|c:\\ghani\\cvprojects\\schoolproject\\schoolproject.core\\features\\students\\queries\\results\\getstudentlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|solutionrelative:schoolproject.core\\features\\students\\queries\\results\\getstudentlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|c:\\ghani\\cvprojects\\schoolproject\\schoolproject.core\\features\\students\\queries\\models\\getstudentbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|solutionrelative:schoolproject.core\\features\\students\\queries\\models\\getstudentbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|c:\\ghani\\cvprojects\\schoolproject\\schoolproject.core\\features\\students\\queries\\models\\getallstudentsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|solutionrelative:schoolproject.core\\features\\students\\queries\\models\\getallstudentsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|c:\\ghani\\cvprojects\\schoolproject\\schoolproject.core\\features\\students\\queries\\results\\getstudentbyid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|solutionrelative:schoolproject.core\\features\\students\\queries\\results\\getstudentbyid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|c:\\ghani\\cvprojects\\schoolproject\\schoolproject.core\\wrappers\\queryableextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|solutionrelative:schoolproject.core\\wrappers\\queryableextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|c:\\ghani\\cvprojects\\schoolproject\\schoolproject.core\\wrappers\\paginatedresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|solutionrelative:schoolproject.core\\wrappers\\paginatedresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|c:\\ghani\\cvprojects\\schoolproject\\schoolproject.core\\bases\\responsehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|solutionrelative:schoolproject.core\\bases\\responsehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|c:\\ghani\\cvprojects\\schoolproject\\schoolproject.core\\features\\students\\commands\\handlers\\studentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|solutionrelative:schoolproject.core\\features\\students\\commands\\handlers\\studentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|c:\\ghani\\cvprojects\\schoolproject\\schoolproject.core\\features\\students\\commands\\models\\deletestudentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|solutionrelative:schoolproject.core\\features\\students\\commands\\models\\deletestudentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F33C92A1-C1E6-4C50-8A7B-771DD36784EF}|SchoolProject.Api\\SchoolProject.Api.csproj|c:\\ghani\\cvprojects\\schoolproject\\schoolproject.api\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F33C92A1-C1E6-4C50-8A7B-771DD36784EF}|SchoolProject.Api\\SchoolProject.Api.csproj|solutionrelative:schoolproject.api\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|c:\\ghani\\cvprojects\\schoolproject\\schoolproject.core\\features\\students\\validations\\addstudentvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|solutionrelative:schoolproject.core\\features\\students\\validations\\addstudentvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|c:\\ghani\\cvprojects\\schoolproject\\schoolproject.core\\features\\students\\validations\\editstudentvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|solutionrelative:schoolproject.core\\features\\students\\validations\\editstudentvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{738F0D9E-B047-4C0F-BFA9-620791B4BC93}|SchoolProject.Service\\SchoolProject.Service.csproj|c:\\ghani\\cvprojects\\schoolproject\\schoolproject.service\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{738F0D9E-B047-4C0F-BFA9-620791B4BC93}|SchoolProject.Service\\SchoolProject.Service.csproj|solutionrelative:schoolproject.service\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F33C92A1-C1E6-4C50-8A7B-771DD36784EF}|SchoolProject.Api\\SchoolProject.Api.csproj|c:\\ghani\\cvprojects\\schoolproject\\schoolproject.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F33C92A1-C1E6-4C50-8A7B-771DD36784EF}|SchoolProject.Api\\SchoolProject.Api.csproj|solutionrelative:schoolproject.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B90BCAF3-1D90-4733-8059-7BC599806667}|SchoolProject.Data\\SchoolProject.Data.csproj|c:\\ghani\\cvprojects\\schoolproject\\schoolproject.data\\appmeatdata\\routing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B90BCAF3-1D90-4733-8059-7BC599806667}|SchoolProject.Data\\SchoolProject.Data.csproj|solutionrelative:schoolproject.data\\appmeatdata\\routing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|c:\\ghani\\cvprojects\\schoolproject\\schoolproject.core\\mapping\\students\\studentmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|solutionrelative:schoolproject.core\\mapping\\students\\studentmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{738F0D9E-B047-4C0F-BFA9-620791B4BC93}|SchoolProject.Service\\SchoolProject.Service.csproj|c:\\ghani\\cvprojects\\schoolproject\\schoolproject.service\\abstracts\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{738F0D9E-B047-4C0F-BFA9-620791B4BC93}|SchoolProject.Service\\SchoolProject.Service.csproj|solutionrelative:schoolproject.service\\abstracts\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,175 +86,243 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EditStudentCommandBody.cs",
-              "DocumentMoniker": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Features\\Students\\Commands\\Models\\EditStudentCommandBody.cs",
-              "RelativeDocumentMoniker": "SchoolProject.Core\\Features\\Students\\Commands\\Models\\EditStudentCommandBody.cs",
-              "ToolTip": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Features\\Students\\Commands\\Models\\EditStudentCommandBody.cs",
-              "RelativeToolTip": "SchoolProject.Core\\Features\\Students\\Commands\\Models\\EditStudentCommandBody.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T10:52:59.226Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EditStudentCommand.cs",
-              "DocumentMoniker": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Features\\Students\\Commands\\Models\\EditStudentCommand.cs",
-              "RelativeDocumentMoniker": "SchoolProject.Core\\Features\\Students\\Commands\\Models\\EditStudentCommand.cs",
-              "ToolTip": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Features\\Students\\Commands\\Models\\EditStudentCommand.cs",
-              "RelativeToolTip": "SchoolProject.Core\\Features\\Students\\Commands\\Models\\EditStudentCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAYAAAARAAAA",
+              "Title": "StudentQueryHandler.cs",
+              "DocumentMoniker": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Features\\Students\\Queries\\Handlers\\StudentQueryHandler.cs",
+              "RelativeDocumentMoniker": "SchoolProject.Core\\Features\\Students\\Queries\\Handlers\\StudentQueryHandler.cs",
+              "ToolTip": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Features\\Students\\Queries\\Handlers\\StudentQueryHandler.cs",
+              "RelativeToolTip": "SchoolProject.Core\\Features\\Students\\Queries\\Handlers\\StudentQueryHandler.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAQwA0AAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T10:40:27.403Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AddStudentValidation.cs",
-              "DocumentMoniker": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Features\\Students\\Validations\\AddStudentValidation.cs",
-              "RelativeDocumentMoniker": "SchoolProject.Core\\Features\\Students\\Validations\\AddStudentValidation.cs",
-              "ToolTip": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Features\\Students\\Validations\\AddStudentValidation.cs",
-              "RelativeToolTip": "SchoolProject.Core\\Features\\Students\\Validations\\AddStudentValidation.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwCEAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T09:55:33.62Z",
+              "WhenOpened": "2024-09-19T12:56:28.859Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "EditStudentValidation.cs",
-              "DocumentMoniker": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Features\\Students\\Validations\\EditStudentValidation.cs",
-              "RelativeDocumentMoniker": "SchoolProject.Core\\Features\\Students\\Validations\\EditStudentValidation.cs",
-              "ToolTip": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Features\\Students\\Validations\\EditStudentValidation.cs",
-              "RelativeToolTip": "SchoolProject.Core\\Features\\Students\\Validations\\EditStudentValidation.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBcAAAAsAAAA",
+              "Title": "GetStudentsPaginated.cs",
+              "DocumentMoniker": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Features\\Students\\Queries\\Results\\GetStudentsPaginated.cs",
+              "RelativeDocumentMoniker": "SchoolProject.Core\\Features\\Students\\Queries\\Results\\GetStudentsPaginated.cs",
+              "ToolTip": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Features\\Students\\Queries\\Results\\GetStudentsPaginated.cs",
+              "RelativeToolTip": "SchoolProject.Core\\Features\\Students\\Queries\\Results\\GetStudentsPaginated.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T09:54:29.889Z",
+              "WhenOpened": "2024-09-19T12:52:14.768Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EditStudentCommandMapping.cs",
-              "DocumentMoniker": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Mapping\\Students\\Command\\EditStudentCommandMapping.cs",
-              "RelativeDocumentMoniker": "SchoolProject.Core\\Mapping\\Students\\Command\\EditStudentCommandMapping.cs",
-              "ToolTip": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Mapping\\Students\\Command\\EditStudentCommandMapping.cs",
-              "RelativeToolTip": "SchoolProject.Core\\Mapping\\Students\\Command\\EditStudentCommandMapping.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAYwAkAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T09:40:06.271Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AddStudentCommandMapping.cs",
-              "DocumentMoniker": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Mapping\\Students\\Command\\AddStudentCommandMapping.cs",
-              "RelativeDocumentMoniker": "SchoolProject.Core\\Mapping\\Students\\Command\\AddStudentCommandMapping.cs",
-              "ToolTip": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Mapping\\Students\\Command\\AddStudentCommandMapping.cs",
-              "RelativeToolTip": "SchoolProject.Core\\Mapping\\Students\\Command\\AddStudentCommandMapping.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T09:41:08.432Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "StudentService.cs",
-              "DocumentMoniker": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Service\\Implementations\\StudentService.cs",
-              "RelativeDocumentMoniker": "SchoolProject.Service\\Implementations\\StudentService.cs",
-              "ToolTip": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Service\\Implementations\\StudentService.cs",
-              "RelativeToolTip": "SchoolProject.Service\\Implementations\\StudentService.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAIwDMAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T09:48:24.739Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IStudentService.cs",
-              "DocumentMoniker": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Service\\Abstracts\\IStudentService.cs",
-              "RelativeDocumentMoniker": "SchoolProject.Service\\Abstracts\\IStudentService.cs",
-              "ToolTip": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Service\\Abstracts\\IStudentService.cs",
-              "RelativeToolTip": "SchoolProject.Service\\Abstracts\\IStudentService.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAkwAkAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T10:00:05.374Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "StudentCommandHandler.cs",
-              "DocumentMoniker": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Features\\Students\\Commands\\Handlers\\StudentCommandHandler.cs",
-              "RelativeDocumentMoniker": "SchoolProject.Core\\Features\\Students\\Commands\\Handlers\\StudentCommandHandler.cs",
-              "ToolTip": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Features\\Students\\Commands\\Handlers\\StudentCommandHandler.cs",
-              "RelativeToolTip": "SchoolProject.Core\\Features\\Students\\Commands\\Handlers\\StudentCommandHandler.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAIAwwCcAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T10:08:45.115Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "StudentController.cs",
-              "DocumentMoniker": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Api\\Controllers\\StudentController.cs",
-              "RelativeDocumentMoniker": "SchoolProject.Api\\Controllers\\StudentController.cs",
-              "ToolTip": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Api\\Controllers\\StudentController.cs",
-              "RelativeToolTip": "SchoolProject.Api\\Controllers\\StudentController.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAAwCcAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T10:12:10.284Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 4,
               "Title": "GetStudentByIdQuery.cs",
               "DocumentMoniker": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Features\\Students\\Queries\\Models\\GetStudentByIdQuery.cs",
               "RelativeDocumentMoniker": "SchoolProject.Core\\Features\\Students\\Queries\\Models\\GetStudentByIdQuery.cs",
               "ToolTip": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Features\\Students\\Queries\\Models\\GetStudentByIdQuery.cs",
               "RelativeToolTip": "SchoolProject.Core\\Features\\Students\\Queries\\Models\\GetStudentByIdQuery.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T10:39:57.234Z",
+              "WhenOpened": "2024-09-19T12:51:20.943Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GetAllStudentsQuery.cs",
+              "DocumentMoniker": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Features\\Students\\Queries\\Models\\GetAllStudentsQuery.cs",
+              "RelativeDocumentMoniker": "SchoolProject.Core\\Features\\Students\\Queries\\Models\\GetAllStudentsQuery.cs",
+              "ToolTip": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Features\\Students\\Queries\\Models\\GetAllStudentsQuery.cs",
+              "RelativeToolTip": "SchoolProject.Core\\Features\\Students\\Queries\\Models\\GetAllStudentsQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T12:51:18.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GetStudentsPaginatedQuery.cs",
+              "DocumentMoniker": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Features\\Students\\Queries\\Models\\GetStudentsPaginatedQuery.cs",
+              "RelativeDocumentMoniker": "SchoolProject.Core\\Features\\Students\\Queries\\Models\\GetStudentsPaginatedQuery.cs",
+              "ToolTip": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Features\\Students\\Queries\\Models\\GetStudentsPaginatedQuery.cs",
+              "RelativeToolTip": "SchoolProject.Core\\Features\\Students\\Queries\\Models\\GetStudentsPaginatedQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T12:51:09.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GetStudentList.cs",
+              "DocumentMoniker": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Features\\Students\\Queries\\Results\\GetStudentList.cs",
+              "RelativeDocumentMoniker": "SchoolProject.Core\\Features\\Students\\Queries\\Results\\GetStudentList.cs",
+              "ToolTip": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Features\\Students\\Queries\\Results\\GetStudentList.cs",
+              "RelativeToolTip": "SchoolProject.Core\\Features\\Students\\Queries\\Results\\GetStudentList.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T12:52:20.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GetStudentById.cs",
+              "DocumentMoniker": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Features\\Students\\Queries\\Results\\GetStudentById.cs",
+              "RelativeDocumentMoniker": "SchoolProject.Core\\Features\\Students\\Queries\\Results\\GetStudentById.cs",
+              "ToolTip": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Features\\Students\\Queries\\Results\\GetStudentById.cs",
+              "RelativeToolTip": "SchoolProject.Core\\Features\\Students\\Queries\\Results\\GetStudentById.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T12:52:25.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "QueryableExtensions.cs",
+              "DocumentMoniker": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Wrappers\\QueryableExtensions.cs",
+              "RelativeDocumentMoniker": "SchoolProject.Core\\Wrappers\\QueryableExtensions.cs",
+              "ToolTip": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Wrappers\\QueryableExtensions.cs",
+              "RelativeToolTip": "SchoolProject.Core\\Wrappers\\QueryableExtensions.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwBgAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T10:48:19.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PaginatedResponse.cs",
+              "DocumentMoniker": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Wrappers\\PaginatedResponse.cs",
+              "RelativeDocumentMoniker": "SchoolProject.Core\\Wrappers\\PaginatedResponse.cs",
+              "ToolTip": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Wrappers\\PaginatedResponse.cs",
+              "RelativeToolTip": "SchoolProject.Core\\Wrappers\\PaginatedResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T10:12:14.824Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "DeleteStudentCommand.cs",
+              "DocumentMoniker": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Features\\Students\\Commands\\Models\\DeleteStudentCommand.cs",
+              "RelativeDocumentMoniker": "SchoolProject.Core\\Features\\Students\\Commands\\Models\\DeleteStudentCommand.cs",
+              "ToolTip": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Features\\Students\\Commands\\Models\\DeleteStudentCommand.cs",
+              "RelativeToolTip": "SchoolProject.Core\\Features\\Students\\Commands\\Models\\DeleteStudentCommand.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAA4wAsAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T06:30:47.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Api\\Program.cs",
+              "RelativeDocumentMoniker": "SchoolProject.Api\\Program.cs",
+              "ToolTip": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Api\\Program.cs",
+              "RelativeToolTip": "SchoolProject.Api\\Program.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T06:27:35.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "Routing.cs",
               "DocumentMoniker": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Data\\AppMeatData\\Routing.cs",
               "RelativeDocumentMoniker": "SchoolProject.Data\\AppMeatData\\Routing.cs",
               "ToolTip": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Data\\AppMeatData\\Routing.cs",
               "RelativeToolTip": "SchoolProject.Data\\AppMeatData\\Routing.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAzwAQAAAAsAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T10:12:31.178Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-13T15:02:52.778Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "StudentMapping.cs",
-              "DocumentMoniker": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Mapping\\Students\\StudentMapping.cs",
-              "RelativeDocumentMoniker": "SchoolProject.Core\\Mapping\\Students\\StudentMapping.cs",
-              "ToolTip": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Mapping\\Students\\StudentMapping.cs",
-              "RelativeToolTip": "SchoolProject.Core\\Mapping\\Students\\StudentMapping.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAoAAAA",
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Api\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "SchoolProject.Api\\Controllers\\StudentController.cs",
+              "ToolTip": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Api\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "SchoolProject.Api\\Controllers\\StudentController.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAqwC4AAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T09:40:36.407Z"
+              "WhenOpened": "2024-09-13T15:00:05.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "StudentCommandHandler.cs",
+              "DocumentMoniker": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Features\\Students\\Commands\\Handlers\\StudentCommandHandler.cs",
+              "RelativeDocumentMoniker": "SchoolProject.Core\\Features\\Students\\Commands\\Handlers\\StudentCommandHandler.cs",
+              "ToolTip": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Features\\Students\\Commands\\Handlers\\StudentCommandHandler.cs",
+              "RelativeToolTip": "SchoolProject.Core\\Features\\Students\\Commands\\Handlers\\StudentCommandHandler.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAkwDQAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T10:08:45.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ResponseHandler.cs",
+              "DocumentMoniker": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Bases\\ResponseHandler.cs",
+              "RelativeDocumentMoniker": "SchoolProject.Core\\Bases\\ResponseHandler.cs",
+              "ToolTip": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Bases\\ResponseHandler.cs",
+              "RelativeToolTip": "SchoolProject.Core\\Bases\\ResponseHandler.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAFUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T14:52:22.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AddStudentValidation.cs",
+              "DocumentMoniker": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Features\\Students\\Validations\\AddStudentValidation.cs",
+              "RelativeDocumentMoniker": "SchoolProject.Core\\Features\\Students\\Validations\\AddStudentValidation.cs",
+              "ToolTip": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Features\\Students\\Validations\\AddStudentValidation.cs",
+              "RelativeToolTip": "SchoolProject.Core\\Features\\Students\\Validations\\AddStudentValidation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T06:27:52.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EditStudentValidation.cs",
+              "DocumentMoniker": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Features\\Students\\Validations\\EditStudentValidation.cs",
+              "RelativeDocumentMoniker": "SchoolProject.Core\\Features\\Students\\Validations\\EditStudentValidation.cs",
+              "ToolTip": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Features\\Students\\Validations\\EditStudentValidation.cs",
+              "RelativeToolTip": "SchoolProject.Core\\Features\\Students\\Validations\\EditStudentValidation.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T06:29:31.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Service\\Implementations\\StudentService.cs",
+              "RelativeDocumentMoniker": "SchoolProject.Service\\Implementations\\StudentService.cs",
+              "ToolTip": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Service\\Implementations\\StudentService.cs",
+              "RelativeToolTip": "SchoolProject.Service\\Implementations\\StudentService.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAEwB4AAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T14:39:48.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IStudentService.cs",
+              "DocumentMoniker": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Service\\Abstracts\\IStudentService.cs",
+              "RelativeDocumentMoniker": "SchoolProject.Service\\Abstracts\\IStudentService.cs",
+              "ToolTip": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Service\\Abstracts\\IStudentService.cs",
+              "RelativeToolTip": "SchoolProject.Service\\Abstracts\\IStudentService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T14:37:54.151Z"
             }
           ]
         }
