@@ -13,7 +13,7 @@ namespace SchoolProject.Core.Wrappers
 
             var count = await source.AsNoTracking().CountAsync();
             pageNumber = pageNumber <= 0 ? 1 : pageNumber;
-            pageSize = pageNumber <= 0 || pageNumber > count ? 1 : pageNumber;
+            pageSize = pageSize <= 0 || pageSize > count ? 10 : pageSize;
 
 
             if (count == 0)
@@ -25,5 +25,4 @@ namespace SchoolProject.Core.Wrappers
             return PaginatedResponse<T>.Success(data, count, pageNumber, pageSize);
         }
     }
-}
 }

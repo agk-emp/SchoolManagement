@@ -18,6 +18,7 @@
             public const string Create = studentVersionOneRoute + "Create";
             public const string Update = studentVersionOneRoute + "Update/" + singleRoute;
             public const string Delete = studentVersionOneRoute + "Delete/" + singleRoute;
+            public const string GetPaginated = studentVersionOneRoute + "Paginated";
         }
     }
 }

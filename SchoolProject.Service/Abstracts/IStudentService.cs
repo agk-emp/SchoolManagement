@@ -12,5 +12,6 @@ namespace SchoolProject.Service.Abstracts
         Task<bool> DoesExistWithName(string name);
         Task<bool> DoesExistWithNameExcludeSelf(string name, int id);
         Task<string> DeleteStudent(Student student);
+        IQueryable<Student> FilterStudents(string? search);
     }
 }

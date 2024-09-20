@@ -1,4 +1,5 @@
 ﻿using SchoolProject.Core.Bases;
+using System.Net;
 
 namespace SchoolProject.Core.Wrappers
 {
@@ -13,9 +14,10 @@ namespace SchoolProject.Core.Wrappers
             PageSize = pageSize;
             TotalPages = (int)Math.Ceiling(count / (double)pageSize);
             TotalCount = count;
+            StatusCode = HttpStatusCode.OK;
         }
 
-        public static PaginatedResponse<T> Success(List<T> data = default, int count, int page, int pageSize)
+        public static PaginatedResponse<T> Success(List<T> data, int count, int page, int pageSize)
         {
             return new PaginatedResponse<T>(true, data, count, page, pageSize);
         }

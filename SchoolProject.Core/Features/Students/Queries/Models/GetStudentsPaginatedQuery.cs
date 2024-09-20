@@ -8,5 +8,6 @@ namespace SchoolProject.Core.Features.Students.Queries.Models
     {
         public int PageNumber { get; set; }
         public int PageSize { get; set; }
+        public string? Search { get; set; }
     }
 }

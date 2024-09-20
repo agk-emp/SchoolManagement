@@ -4,7 +4,9 @@ using SchoolProject.Core.Bases;
 using SchoolProject.Core.Features.Students.Queries.Models;
 using SchoolProject.Core.Features.Students.Queries.Results;
 using SchoolProject.Core.Wrappers;
+using SchoolProject.Data.Entities;
 using SchoolProject.Service.Abstracts;
+using System.Linq.Expressions;
 
 namespace SchoolProject.Core.Features.Students.Queries.Handlers
 {
@@ -41,9 +43,17 @@ namespace SchoolProject.Core.Features.Students.Queries.Handlers
             return Success(mappedStudent);
         }
 
-        public Task<PaginatedResponse<GetStudentsPaginated>> Handle(GetStudentsPaginatedQuery request, CancellationToken cancellationToken)
+        public async Task<PaginatedResponse<GetStudentsPaginated>> Handle(GetStudentsPaginatedQuery request, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            Expression<Func<Student, GetStudentsPaginated>> mappingSql = e => new GetStudentsPaginated(
+                e.StudID, e.Name, e.Address, e.Department.DName);
+
+            var query = await _studentService.FilterStudents(request.Search)
+                .Select(mappingSql)
+                .ToPaginatedResult(request.PageNumber,
+                request.PageSize);
+
+            return query;
         }
     }
 }
