@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SchoolProject.Data.Entities;
+using SchoolProject.Data.Helper;
 using SchoolProject.Infrastructure.Abstracts;
 using SchoolProject.Service.Abstracts;
 
@@ -78,19 +79,36 @@ namespace SchoolProject.Service.Implementations
             return student;
         }
 
-        public IQueryable<Student> FilterStudents(string? search)
+        public IQueryable<Student> FilterStudents(string? search,
+            StudentOrderingEnum? orderBy)
         {
 
             var queryable = _studentRepository.GetTableNoTracking()
                 .Include(stud => stud.Department).AsQueryable();
-            if (string.IsNullOrEmpty(search))
+            if (!string.IsNullOrEmpty(search))
             {
-                return queryable;
+                queryable = queryable.Where(
+                 s => EF.Functions.Like(s.Name, $"%{search}%") ||
+                 EF.Functions.Like(s.Address, $"%{search}%"));
             }
 
-            queryable = queryable.Where(
-                s => EF.Functions.Like(s.Name, $"%{search}%") ||
-                EF.Functions.Like(s.Address, $"%{search}%"));
+            if (orderBy.HasValue)
+            {
+                switch (orderBy)
+                {
+                    case StudentOrderingEnum.StudID:
+                        queryable = queryable.OrderBy(stud => stud.StudID); break;
+
+                    case StudentOrderingEnum.Name:
+                        queryable = queryable.OrderBy(stud => stud.Name); break;
+
+                    case StudentOrderingEnum.Address:
+                        queryable = queryable.OrderBy(stud => stud.Address); break;
+
+                    case StudentOrderingEnum.DepartmentName:
+                        queryable = queryable.OrderBy(stud => stud.Department.DName); break;
+                }
+            }
 
             return queryable;
         }

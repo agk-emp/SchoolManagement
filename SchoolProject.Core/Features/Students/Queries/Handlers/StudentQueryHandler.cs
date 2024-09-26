@@ -1,8 +1,10 @@
 ﻿using AutoMapper;
 using MediatR;
+using Microsoft.Extensions.Localization;
 using SchoolProject.Core.Bases;
 using SchoolProject.Core.Features.Students.Queries.Models;
 using SchoolProject.Core.Features.Students.Queries.Results;
+using SchoolProject.Core.Resources;
 using SchoolProject.Core.Wrappers;
 using SchoolProject.Data.Entities;
 using SchoolProject.Service.Abstracts;
@@ -17,12 +19,15 @@ namespace SchoolProject.Core.Features.Students.Queries.Handlers
     {
         private readonly IStudentService _studentService;
         private readonly IMapper _mapper;
+        private readonly IStringLocalizer<SharedResources> _localizer;
 
         public StudentQueryHandler(IStudentService studentService,
-            IMapper mapper)
+            IMapper mapper,
+            IStringLocalizer<SharedResources> localizer)
         {
             _studentService = studentService;
             _mapper = mapper;
+            _localizer = localizer;
         }
 
         public async Task<Response<List<GetStudentList>>> Handle(GetAllStudentsQuery request, CancellationToken cancellationToken)
@@ -37,7 +42,7 @@ namespace SchoolProject.Core.Features.Students.Queries.Handlers
             var student = await _studentService.GetStudentById(request.Id);
             if (student is null)
             {
-                return NotFound<GetStudentById>("The object was not found");
+                return NotFound<GetStudentById>(_localizer[SharedResourcesKeys.NotFound]);
             }
             var mappedStudent = _mapper.Map<GetStudentById>(student);
             return Success(mappedStudent);
@@ -48,7 +53,8 @@ namespace SchoolProject.Core.Features.Students.Queries.Handlers
             Expression<Func<Student, GetStudentsPaginated>> mappingSql = e => new GetStudentsPaginated(
                 e.StudID, e.Name, e.Address, e.Department.DName);
 
-            var query = await _studentService.FilterStudents(request.Search)
+            var query = await _studentService.FilterStudents(request.Search,
+                request.OrderBy)
                 .Select(mappingSql)
                 .ToPaginatedResult(request.PageNumber,
                 request.PageSize);

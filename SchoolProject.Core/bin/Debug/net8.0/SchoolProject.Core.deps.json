@@ -16,6 +16,14 @@
         },
         "runtime": {
           "SchoolProject.Core.dll": {}
+        },
+        "resources": {
+          "ar/SchoolProject.Core.resources.dll": {
+            "locale": "ar"
+          },
+          "en/SchoolProject.Core.resources.dll": {
+            "locale": "en"
+          }
         }
       },
       "AutoMapper/13.0.1": {
