@@ -117,7 +117,43 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Added" xml:space="preserve">
+    <value>تمت الاضافة بنجاح</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>العنوان</value>
+  </data>
+  <data name="AlreadyExists" xml:space="preserve">
+    <value>العنصر مع هذه القيمة موجود: {0}</value>
+  </data>
+  <data name="Deleted" xml:space="preserve">
+    <value>تم الحذف بنجاح</value>
+  </data>
+  <data name="MaxLength" xml:space="preserve">
+    <value>تجاوز الحد الاقصى: {0}</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>الاسم</value>
+  </data>
+  <data name="NotEmpty" xml:space="preserve">
+    <value>{0}: لا يمكن ان يبقى فارغا</value>
+  </data>
   <data name="NotFound" xml:space="preserve">
     <value>هذا العنصر غير متاح</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>الهاتف</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>تمت العملية بنجاح</value>
+  </data>
+  <data name="Unauthorized" xml:space="preserve">
+    <value>غير مسموح لك اتمام هذه المهمة</value>
+  </data>
+  <data name="Unprocessable" xml:space="preserve">
+    <value>العملية لم تكتمل</value>
+  </data>
+  <data name="Updated" xml:space="preserve">
+    <value>تم التعديل بنجاح</value>
   </data>
 </root>

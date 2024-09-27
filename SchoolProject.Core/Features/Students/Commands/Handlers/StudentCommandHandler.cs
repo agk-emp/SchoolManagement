@@ -1,7 +1,9 @@
 ﻿using AutoMapper;
 using MediatR;
+using Microsoft.Extensions.Localization;
 using SchoolProject.Core.Bases;
 using SchoolProject.Core.Features.Students.Commands.Models;
+using SchoolProject.Core.Resources;
 using SchoolProject.Data.Entities;
 using SchoolProject.Service.Abstracts;
 
@@ -14,7 +16,8 @@ namespace SchoolProject.Core.Features.Students.Commands.Handlers
         private readonly IStudentService _studentService;
 
         public StudentCommandHandler(IStudentService studentService,
-            IMapper mapper)
+            IMapper mapper,
+            IStringLocalizer<SharedResources> localizer) : base(localizer)
         {
             _studentService = studentService;
             _mapper = mapper;
@@ -25,7 +28,7 @@ namespace SchoolProject.Core.Features.Students.Commands.Handlers
         {
             var student = _mapper.Map<Student>(request);
 
-            var result = await _studentService.AddStudent(student);
+            await _studentService.AddStudent(student);
             return Created<string>();
         }
 
@@ -39,7 +42,7 @@ namespace SchoolProject.Core.Features.Students.Commands.Handlers
 
             var studentUpdated = _mapper.Map<Student>(request);
             await _studentService.EditStudent(studentUpdated);
-            return Success<string>("The student was updated successfully");
+            return Success<string>(_localizer[SharedResourcesKeys.Updated]);
         }
 
         public async Task<Response<string>> Handle(DeleteStudentCommand request, CancellationToken cancellationToken)

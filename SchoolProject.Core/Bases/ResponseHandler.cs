@@ -1,12 +1,15 @@
-﻿using System.Net;
+﻿using Microsoft.Extensions.Localization;
+using SchoolProject.Core.Resources;
+using System.Net;
 
 namespace SchoolProject.Core.Bases
 {
     public class ResponseHandler
     {
-        public ResponseHandler()
+        protected readonly IStringLocalizer<SharedResources> _localizer;
+        public ResponseHandler(IStringLocalizer<SharedResources> localizer)
         {
-
+            _localizer = localizer;
         }
 
         public Response<T> Success<T>(T entity, object Meta = null)
@@ -17,7 +20,7 @@ namespace SchoolProject.Core.Bases
                 Meta = Meta,
                 StatusCode = HttpStatusCode.OK,
                 Succeeded = true,
-                Message = "Added Successfully",
+                Message = _localizer[SharedResourcesKeys.Success],
             };
         }
 
@@ -27,15 +30,15 @@ namespace SchoolProject.Core.Bases
             {
                 StatusCode = HttpStatusCode.Unauthorized,
                 Succeeded = false,
-                Message = "UnAuthorized"
+                Message = _localizer[SharedResourcesKeys.Unauthorized]
             };
         }
 
-        public Response<T> NotFound<T>(string message = null)
+        public Response<T> NotFound<T>()
         {
             return new Response<T>()
             {
-                Message = message,
+                Message = _localizer[SharedResourcesKeys.NotFound],
                 StatusCode = HttpStatusCode.NotFound,
                 Succeeded = false,
             };
@@ -49,7 +52,7 @@ namespace SchoolProject.Core.Bases
                 Succeeded = true,
                 Meta = Meta,
                 Data = entity,
-                Message = "Added successfully",
+                Message = _localizer[SharedResourcesKeys.Added],
             };
         }
 
@@ -59,15 +62,15 @@ namespace SchoolProject.Core.Bases
             {
                 StatusCode = HttpStatusCode.Created,
                 Succeeded = true,
-                Message = "Added successfully",
+                Message = _localizer[SharedResourcesKeys.Added],
             };
         }
 
-        public Response<T> UnprocessableEntity<T>(string message = "Unable to process this entity")
+        public Response<T> UnprocessableEntity<T>()
         {
             return new Response<T>()
             {
-                Message = message,
+                Message = _localizer[SharedResourcesKeys.Unprocessable],
                 StatusCode = HttpStatusCode.UnprocessableEntity,
                 Succeeded = false,
             };
@@ -79,7 +82,7 @@ namespace SchoolProject.Core.Bases
             {
                 StatusCode = HttpStatusCode.OK,
                 Succeeded = true,
-                Message = "Deleted successfully",
+                Message = _localizer[SharedResourcesKeys.Deleted],
             };
         }
     }

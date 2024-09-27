@@ -1,5 +1,7 @@
 ﻿using FluentValidation;
+using Microsoft.Extensions.Localization;
 using SchoolProject.Core.Features.Students.Commands.Models;
+using SchoolProject.Core.Resources;
 using SchoolProject.Service.Abstracts;
 
 namespace SchoolProject.Core.Features.Students.Validations
@@ -7,9 +9,11 @@ namespace SchoolProject.Core.Features.Students.Validations
     public class EditStudentValidation : AbstractValidator<EditStudentCommand>
     {
         private readonly IStudentService _studentService;
-        public EditStudentValidation(IStudentService studentService)
+        private readonly IStringLocalizer<SharedResources> _localizer;
+        public EditStudentValidation(IStudentService studentService, IStringLocalizer<SharedResources> localizer)
         {
             _studentService = studentService;
+            _localizer = localizer;
             EditStudentCommandRules();
             AddCustomValidation();
         }
@@ -17,9 +21,9 @@ namespace SchoolProject.Core.Features.Students.Validations
         private void EditStudentCommandRules()
         {
             RuleFor(stud => stud.EditStudentCommandBody.Name).
-               NotEmpty().WithMessage("{PropertyName can not be empty}").
-               NotNull().WithMessage("{PropertyValue} can not be null").
-               MaximumLength(20).WithMessage("Excedeed maximum length which is 20");
+               NotEmpty().WithMessage(_localizer[SharedResourcesKeys.NotEmpty, _localizer[SharedResourcesKeys.PropertyName]]).
+               NotNull().WithMessage(_localizer[SharedResourcesKeys.NotEmpty, _localizer[SharedResourcesKeys.PropertyName]]).
+               MaximumLength(20).WithMessage(_localizer[SharedResourcesKeys.MaxLength, SharedResourcesKeys.StudentNameMaxLength]);
 
             RuleFor(stud => stud.EditStudentCommandBody.Address)
                 .NotEmpty()
@@ -33,7 +37,7 @@ namespace SchoolProject.Core.Features.Students.Validations
                 {
                     return !await _studentService
                     .DoesExistWithNameExcludeSelf(key, model.id);
-                }).WithMessage("Name already exists");
+                }).WithMessage(_localizer[SharedResourcesKeys.AlreadyExists, _localizer[SharedResourcesKeys.PropertyValue]]);
         }
     }
 }

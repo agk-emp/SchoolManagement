@@ -19,15 +19,13 @@ namespace SchoolProject.Core.Features.Students.Queries.Handlers
     {
         private readonly IStudentService _studentService;
         private readonly IMapper _mapper;
-        private readonly IStringLocalizer<SharedResources> _localizer;
 
         public StudentQueryHandler(IStudentService studentService,
             IMapper mapper,
-            IStringLocalizer<SharedResources> localizer)
+            IStringLocalizer<SharedResources> localizer) : base(localizer)
         {
             _studentService = studentService;
             _mapper = mapper;
-            _localizer = localizer;
         }
 
         public async Task<Response<List<GetStudentList>>> Handle(GetAllStudentsQuery request, CancellationToken cancellationToken)
@@ -42,7 +40,7 @@ namespace SchoolProject.Core.Features.Students.Queries.Handlers
             var student = await _studentService.GetStudentById(request.Id);
             if (student is null)
             {
-                return NotFound<GetStudentById>(_localizer[SharedResourcesKeys.NotFound]);
+                return NotFound<GetStudentById>();
             }
             var mappedStudent = _mapper.Map<GetStudentById>(student);
             return Success(mappedStudent);

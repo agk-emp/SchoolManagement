@@ -15,16 +15,14 @@ namespace SchoolProject.Service.Implementations
             _studentRepository = studentRepository;
         }
 
-        public async Task<string> AddStudent(Student student)
+        public async Task AddStudent(Student student)
         {
             await _studentRepository.AddAsync(student);
-            return "The student was added successfully";
         }
 
-        public async Task<string> EditStudent(Student student)
+        public async Task EditStudent(Student student)
         {
             await _studentRepository.UpdateAsync(student);
-            return "The student was updated successfully";
         }
 
         public async Task<bool> DoesExistWithName(string name)
@@ -67,10 +65,9 @@ namespace SchoolProject.Service.Implementations
             return student;
         }
 
-        public async Task<string> DeleteStudent(Student student)
+        public async Task DeleteStudent(Student student)
         {
             await _studentRepository.DeleteAsync(student);
-            return "The student was deleted successfully";
         }
 
         public async Task<Student> GetStudentWithoutInclude(int id)

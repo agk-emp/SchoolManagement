@@ -152,3 +152,4 @@ C:\Ghani\CVProjects\SchoolProject\SchoolProject.Api\bin\Debug\net8.0\FluentValid
 C:\Ghani\CVProjects\SchoolProject\SchoolProject.Api\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Ghani\CVProjects\SchoolProject\SchoolProject.Api\bin\Debug\net8.0\ar\SchoolProject.Core.resources.dll
 C:\Ghani\CVProjects\SchoolProject\SchoolProject.Api\bin\Debug\net8.0\en\SchoolProject.Core.resources.dll
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Api\bin\Debug\net8.0\Microsoft.Extensions.Localization.Abstractions.dll
