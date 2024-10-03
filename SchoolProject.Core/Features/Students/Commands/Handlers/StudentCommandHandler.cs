@@ -40,7 +40,7 @@ namespace SchoolProject.Core.Features.Students.Commands.Handlers
                 return NotFound<string>();
             }
 
-            var studentUpdated = _mapper.Map<Student>(request);
+            var studentUpdated = _mapper.Map(request, studentToUpdate);
             await _studentService.EditStudent(studentUpdated);
             return Success<string>(_localizer[SharedResourcesKeys.Updated]);
         }

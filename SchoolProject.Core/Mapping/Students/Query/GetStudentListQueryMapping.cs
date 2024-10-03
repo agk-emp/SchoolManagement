@@ -8,8 +8,12 @@ namespace SchoolProject.Core.Mapping.Students
         private void GetStudetsListQueryMapped()
         {
             CreateMap<Student, GetStudentList>()
-                .ForMember(des=>des.DepartmentName,
-                opt=>opt.MapFrom(src=>src.Department.DName));
+                .ForMember(des => des.DepartmentName,
+                opt => opt.MapFrom(src => src.Department.DName))
+                .ForMember(dst => dst.Name, opt =>
+                {
+                    opt.MapFrom(src => src.GetLocalizedName(src.NameAr, src.NameEn));
+                });
         }
     }
 }

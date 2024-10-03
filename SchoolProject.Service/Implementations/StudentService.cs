@@ -28,7 +28,7 @@ namespace SchoolProject.Service.Implementations
         public async Task<bool> DoesExistWithName(string name)
         {
             var studentChecker = await _studentRepository.GetTableNoTracking()
-                .FirstOrDefaultAsync(stud => stud.Name == name);
+                .FirstOrDefaultAsync(stud => stud.NameAr == name || stud.NameEn == name);
 
             if (studentChecker is null)
             {
@@ -40,7 +40,7 @@ namespace SchoolProject.Service.Implementations
         public async Task<bool> DoesExistWithNameExcludeSelf(string name, int id)
         {
             var studentChecker = await _studentRepository.GetTableNoTracking()
-                .FirstOrDefaultAsync(stud => stud.Name == name &&
+                .FirstOrDefaultAsync(stud => (stud.NameEn == name || stud.NameEn == name) &&
                 stud.StudID != id);
 
             if (studentChecker is null)
@@ -85,7 +85,8 @@ namespace SchoolProject.Service.Implementations
             if (!string.IsNullOrEmpty(search))
             {
                 queryable = queryable.Where(
-                 s => EF.Functions.Like(s.Name, $"%{search}%") ||
+                 s => EF.Functions.Like(s.NameEn, $"%{search}%") ||
+                 EF.Functions.Like(s.NameAr, $"%{search}%") ||
                  EF.Functions.Like(s.Address, $"%{search}%"));
             }
 
@@ -97,7 +98,8 @@ namespace SchoolProject.Service.Implementations
                         queryable = queryable.OrderBy(stud => stud.StudID); break;
 
                     case StudentOrderingEnum.Name:
-                        queryable = queryable.OrderBy(stud => stud.Name); break;
+                        queryable = queryable.OrderBy(stud => stud.GetLocalizedName(stud.NameAr,
+                            stud.NameEn)); break;
 
                     case StudentOrderingEnum.Address:
                         queryable = queryable.OrderBy(stud => stud.Address); break;

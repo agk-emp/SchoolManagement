@@ -20,7 +20,7 @@ namespace SchoolProject.Core.Bases
                 Meta = Meta,
                 StatusCode = HttpStatusCode.OK,
                 Succeeded = true,
-                Message = _localizer[SharedResourcesKeys.Success],
+                Message = _localizer[SharedResourcesKeys.Updated],
             };
         }
 

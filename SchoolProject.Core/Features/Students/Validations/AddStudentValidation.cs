@@ -22,7 +22,13 @@ namespace SchoolProject.Core.Features.Students.Validations
 
         private void AddStudentCommandRules()
         {
-            RuleFor(stud => stud.Name).
+            RuleFor(stud => stud.NameEn).
+                NotEmpty().WithMessage(_localizer[SharedResourcesKeys.NotEmpty, _localizer[SharedResourcesKeys.PropertyName]]).
+            NotNull().WithMessage(_localizer[SharedResourcesKeys.NotEmpty, _localizer[SharedResourcesKeys.PropertyName]]).
+            MaximumLength(20).WithMessage(_localizer[SharedResourcesKeys.MaxLength, SharedResourcesKeys.StudentNameMaxLength]);
+
+
+            RuleFor(stud => stud.NameAr).
                 NotEmpty().WithMessage(_localizer[SharedResourcesKeys.NotEmpty, _localizer[SharedResourcesKeys.PropertyName]]).
             NotNull().WithMessage(_localizer[SharedResourcesKeys.NotEmpty, _localizer[SharedResourcesKeys.PropertyName]]).
             MaximumLength(20).WithMessage(_localizer[SharedResourcesKeys.MaxLength, SharedResourcesKeys.StudentNameMaxLength]);
@@ -34,7 +40,12 @@ namespace SchoolProject.Core.Features.Students.Validations
 
         private void AddCustomValidation()
         {
-            RuleFor(stud => stud.Name)
+            RuleFor(stud => stud.NameAr)
+                .MustAsync(async (Key, CancellationToken) =>
+                !await _studentService.DoesExistWithName(Key))
+                .WithMessage(_localizer[SharedResourcesKeys.AlreadyExists, _localizer[SharedResourcesKeys.PropertyValue]]);
+
+            RuleFor(stud => stud.NameEn)
                 .MustAsync(async (Key, CancellationToken) =>
                 !await _studentService.DoesExistWithName(Key))
                 .WithMessage(_localizer[SharedResourcesKeys.AlreadyExists, _localizer[SharedResourcesKeys.PropertyValue]]);
