@@ -8,9 +8,7 @@ namespace SchoolProject.Infrastructure.Context.Configurations
     {
         public void Configure(EntityTypeBuilder<StudentSubject> builder)
         {
-            builder.HasKey(sts => sts.StudSubID);
-            builder.Property(sts => sts.StudSubID).
-                ValueGeneratedOnAdd();
+            builder.HasKey(sts => new { sts.StudID, sts.SubID });
 
             builder.HasOne(sts => sts.Subject)
                 .WithMany(s => s.StudentsSubjects)
