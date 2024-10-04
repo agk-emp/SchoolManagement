@@ -18,3 +18,10 @@ C:\Ghani\CVProjects\SchoolProject\SchoolProject.Core\obj\Debug\net8.0\refint\Sch
 C:\Ghani\CVProjects\SchoolProject\SchoolProject.Core\obj\Debug\net8.0\SchoolProject.Core.pdb
 C:\Ghani\CVProjects\SchoolProject\SchoolProject.Core\obj\Debug\net8.0\ref\SchoolProject.Core.dll
 C:\Ghani\CVProjects\SchoolProject\SchoolProject.Core\obj\Debug\net8.0\SchoolProject.Core.sourcelink.json
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Core\bin\Debug\net8.0\ar\SchoolProject.Core.resources.dll
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Core\bin\Debug\net8.0\en\SchoolProject.Core.resources.dll
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Core\obj\Debug\net8.0\SchoolProject.Core.Resources.SharedResources.ar.resources
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Core\obj\Debug\net8.0\SchoolProject.Core.Resources.SharedResources.en.resources
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Core\obj\Debug\net8.0\SchoolProject.Core.csproj.GenerateResource.cache
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Core\obj\Debug\net8.0\ar\SchoolProject.Core.resources.dll
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Core\obj\Debug\net8.0\en\SchoolProject.Core.resources.dll

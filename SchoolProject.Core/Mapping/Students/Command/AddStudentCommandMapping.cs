@@ -11,6 +11,14 @@ namespace SchoolProject.Core.Mapping.Students
                 .ForMember(dst => dst.DID, opt =>
                 {
                     opt.MapFrom(src => src.DepartmentID);
+                })
+                .ForMember(dst => dst.NameEn, opt =>
+                {
+                    opt.MapFrom(src => src.NameEn);
+                })
+                .ForMember(dst => dst.NameAr, opt =>
+                {
+                    opt.MapFrom(src => src.NameAr);
                 });
         }
     }

@@ -17,9 +17,13 @@ namespace SchoolProject.Core.Mapping.Students
                 {
                     opt.MapFrom(src => src.id);
                 })
-                .ForMember(dest => dest.Name, opt =>
+                .ForMember(dest => dest.NameEn, opt =>
                 {
-                    opt.MapFrom(src => src.EditStudentCommandBody.Name);
+                    opt.MapFrom(src => src.EditStudentCommandBody.NameEn);
+                })
+                .ForMember(dest => dest.NameAr, opt =>
+                {
+                    opt.MapFrom(src => src.EditStudentCommandBody.NameAr);
                 })
                 .ForMember(dest => dest.Address, opt =>
                 {

@@ -1020,6 +1020,14 @@
         },
         "runtime": {
           "SchoolProject.Core.dll": {}
+        },
+        "resources": {
+          "ar/SchoolProject.Core.resources.dll": {
+            "locale": "ar"
+          },
+          "en/SchoolProject.Core.resources.dll": {
+            "locale": "en"
+          }
         }
       },
       "SchoolProject.Data/1.0.0": {

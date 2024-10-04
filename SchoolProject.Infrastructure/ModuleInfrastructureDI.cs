@@ -13,13 +13,13 @@ namespace SchoolProject.Infrastructure
         public static IServiceCollection AddInfrastructureDIS(this IServiceCollection services,
             IConfigurationManager configuration)
         {
-            services.AddDbContext<ApplicationDbContext>(option =>
+            services.AddDbContextFactory<ApplicationDbContext>(option =>
             {
                 option.UseSqlServer(configuration.GetConnectionString("dbcontext"));
             });
             services.AddTransient(typeof(IGenericRepository<>),
                 typeof(GenericRepository<>));
-            services.AddTransient<IStudentRepository,StudentRepository>();
+            services.AddTransient<IStudentRepository, StudentRepository>();
             return services;
         }
     }

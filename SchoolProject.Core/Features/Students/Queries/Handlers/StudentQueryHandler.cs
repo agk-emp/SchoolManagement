@@ -1,8 +1,10 @@
 ﻿using AutoMapper;
 using MediatR;
+using Microsoft.Extensions.Localization;
 using SchoolProject.Core.Bases;
 using SchoolProject.Core.Features.Students.Queries.Models;
 using SchoolProject.Core.Features.Students.Queries.Results;
+using SchoolProject.Core.Resources;
 using SchoolProject.Core.Wrappers;
 using SchoolProject.Data.Entities;
 using SchoolProject.Service.Abstracts;
@@ -19,7 +21,8 @@ namespace SchoolProject.Core.Features.Students.Queries.Handlers
         private readonly IMapper _mapper;
 
         public StudentQueryHandler(IStudentService studentService,
-            IMapper mapper)
+            IMapper mapper,
+            IStringLocalizer<SharedResources> localizer) : base(localizer)
         {
             _studentService = studentService;
             _mapper = mapper;
@@ -29,7 +32,7 @@ namespace SchoolProject.Core.Features.Students.Queries.Handlers
         {
             var students = await _studentService.GetAllStudentsAsync();
             var mappedStudents = _mapper.Map<List<GetStudentList>>(students);
-            return Success(mappedStudents);
+            return Success(mappedStudents, new { Count = students.Count });
         }
 
         public async Task<Response<GetStudentById>> Handle(GetStudentByIdQuery request, CancellationToken cancellationToken)
@@ -37,7 +40,7 @@ namespace SchoolProject.Core.Features.Students.Queries.Handlers
             var student = await _studentService.GetStudentById(request.Id);
             if (student is null)
             {
-                return NotFound<GetStudentById>("The object was not found");
+                return NotFound<GetStudentById>();
             }
             var mappedStudent = _mapper.Map<GetStudentById>(student);
             return Success(mappedStudent);
@@ -46,12 +49,15 @@ namespace SchoolProject.Core.Features.Students.Queries.Handlers
         public async Task<PaginatedResponse<GetStudentsPaginated>> Handle(GetStudentsPaginatedQuery request, CancellationToken cancellationToken)
         {
             Expression<Func<Student, GetStudentsPaginated>> mappingSql = e => new GetStudentsPaginated(
-                e.StudID, e.Name, e.Address, e.Department.DName);
+                e.StudID, e.GetLocalizedName(e.NameAr, e.NameEn), e.Address, e.Department.GetLocalizedName(e.Department.DNameAr, e.Department.DNameEn));
 
-            var query = await _studentService.FilterStudents(request.Search)
+            var query = await _studentService.FilterStudents(request.Search,
+                request.OrderBy)
                 .Select(mappingSql)
                 .ToPaginatedResult(request.PageNumber,
                 request.PageSize);
+
+            query.Meta = new { CurrentPageCount = query.Data.Count };
 
             return query;
         }
