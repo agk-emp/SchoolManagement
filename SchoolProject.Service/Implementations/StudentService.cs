@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SchoolProject.Data.Entities;
+using SchoolProject.Data.Helper;
 using SchoolProject.Infrastructure.Abstracts;
 using SchoolProject.Service.Abstracts;
 
@@ -14,22 +15,20 @@ namespace SchoolProject.Service.Implementations
             _studentRepository = studentRepository;
         }
 
-        public async Task<string> AddStudent(Student student)
+        public async Task AddStudent(Student student)
         {
             await _studentRepository.AddAsync(student);
-            return "The student was added successfully";
         }
 
-        public async Task<string> EditStudent(Student student)
+        public async Task EditStudent(Student student)
         {
             await _studentRepository.UpdateAsync(student);
-            return "The student was updated successfully";
         }
 
         public async Task<bool> DoesExistWithName(string name)
         {
             var studentChecker = await _studentRepository.GetTableNoTracking()
-                .FirstOrDefaultAsync(stud => stud.Name == name);
+                .FirstOrDefaultAsync(stud => stud.NameAr == name || stud.NameEn == name);
 
             if (studentChecker is null)
             {
@@ -41,7 +40,7 @@ namespace SchoolProject.Service.Implementations
         public async Task<bool> DoesExistWithNameExcludeSelf(string name, int id)
         {
             var studentChecker = await _studentRepository.GetTableNoTracking()
-                .FirstOrDefaultAsync(stud => stud.Name == name &&
+                .FirstOrDefaultAsync(stud => (stud.NameEn == name || stud.NameEn == name) &&
                 stud.StudID != id);
 
             if (studentChecker is null)
@@ -66,10 +65,9 @@ namespace SchoolProject.Service.Implementations
             return student;
         }
 
-        public async Task<string> DeleteStudent(Student student)
+        public async Task DeleteStudent(Student student)
         {
             await _studentRepository.DeleteAsync(student);
-            return "The student was deleted successfully";
         }
 
         public async Task<Student> GetStudentWithoutInclude(int id)
@@ -78,19 +76,38 @@ namespace SchoolProject.Service.Implementations
             return student;
         }
 
-        public IQueryable<Student> FilterStudents(string? search)
+        public IQueryable<Student> FilterStudents(string? search,
+            StudentOrderingEnum? orderBy)
         {
 
             var queryable = _studentRepository.GetTableNoTracking()
                 .Include(stud => stud.Department).AsQueryable();
-            if (string.IsNullOrEmpty(search))
+            if (!string.IsNullOrEmpty(search))
             {
-                return queryable;
+                queryable = queryable.Where(
+                 s => EF.Functions.Like(s.NameEn, $"%{search}%") ||
+                 EF.Functions.Like(s.NameAr, $"%{search}%") ||
+                 EF.Functions.Like(s.Address, $"%{search}%"));
             }
 
-            queryable = queryable.Where(
-                s => EF.Functions.Like(s.Name, $"%{search}%") ||
-                EF.Functions.Like(s.Address, $"%{search}%"));
+            if (orderBy.HasValue)
+            {
+                switch (orderBy)
+                {
+                    case StudentOrderingEnum.StudID:
+                        queryable = queryable.OrderBy(stud => stud.StudID); break;
+
+                    case StudentOrderingEnum.Name:
+                        queryable = queryable.OrderBy(stud => stud.GetLocalizedName(stud.NameAr,
+                            stud.NameEn)); break;
+
+                    case StudentOrderingEnum.Address:
+                        queryable = queryable.OrderBy(stud => stud.Address); break;
+
+                    case StudentOrderingEnum.DepartmentName:
+                        queryable = queryable.OrderBy(stud => stud.Department.GetLocalizedName(stud.Department.DNameAr, stud.Department.DNameEn)); break;
+                }
+            }
 
             return queryable;
         }

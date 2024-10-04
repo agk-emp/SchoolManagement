@@ -130,7 +130,6 @@ C:\Ghani\CVProjects\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\SchoolProje
 C:\Ghani\CVProjects\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\SchoolProject.Api.AssemblyInfoInputs.cache
 C:\Ghani\CVProjects\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\SchoolProject.Api.AssemblyInfo.cs
 C:\Ghani\CVProjects\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\SchoolProject.Api.csproj.CoreCompileInputs.cache
-C:\Ghani\CVProjects\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\SchoolProject.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Ghani\CVProjects\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\SchoolProject.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Ghani\CVProjects\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\staticwebassets.build.json
 C:\Ghani\CVProjects\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\staticwebassets.development.json
@@ -150,3 +149,5 @@ C:\Ghani\CVProjects\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\SchoolProje
 C:\Ghani\CVProjects\SchoolProject\SchoolProject.Api\bin\Debug\net8.0\FluentValidation.dll
 C:\Ghani\CVProjects\SchoolProject\SchoolProject.Api\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
 C:\Ghani\CVProjects\SchoolProject\SchoolProject.Api\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Api\bin\Debug\net8.0\ar\SchoolProject.Core.resources.dll
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Api\bin\Debug\net8.0\en\SchoolProject.Core.resources.dll

@@ -1,3 +1,4 @@
+using Microsoft.Extensions.Options;
 using SchoolProject.Core;
 using SchoolProject.Core.Middlewares;
 using SchoolProject.Infrastructure;
@@ -30,6 +31,10 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+
+var options = app.Services.GetService<IOptions<RequestLocalizationOptions>>();
+app.UseRequestLocalization(options.Value);
 
 app.UseMiddleware<ErrorHandlingMiddleware>();
 
