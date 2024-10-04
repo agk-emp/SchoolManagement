@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Ghani\\CVProjects\\SchoolProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|c:\\ghani\\cvprojects\\schoolproject\\schoolproject.core\\features\\students\\queries\\handlers\\studentqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|solutionrelative:schoolproject.core\\features\\students\\queries\\handlers\\studentqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{738F0D9E-B047-4C0F-BFA9-620791B4BC93}|SchoolProject.Service\\SchoolProject.Service.csproj|c:\\ghani\\cvprojects\\schoolproject\\schoolproject.service\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{738F0D9E-B047-4C0F-BFA9-620791B4BC93}|SchoolProject.Service\\SchoolProject.Service.csproj|solutionrelative:schoolproject.service\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|c:\\ghani\\cvprojects\\schoolproject\\schoolproject.core\\wrappers\\paginatedresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|solutionrelative:schoolproject.core\\wrappers\\paginatedresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|c:\\ghani\\cvprojects\\schoolproject\\schoolproject.core\\features\\students\\queries\\handlers\\studentqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|solutionrelative:schoolproject.core\\features\\students\\queries\\handlers\\studentqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{92F27877-5FEB-435D-B0E9-44B5E6E194C2}|SchoolProject.Core\\SchoolProject.Core.csproj|c:\\ghani\\cvprojects\\schoolproject\\schoolproject.core\\bases\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -90,17 +90,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "StudentService.cs",
               "DocumentMoniker": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Service\\Implementations\\StudentService.cs",
               "RelativeDocumentMoniker": "SchoolProject.Service\\Implementations\\StudentService.cs",
               "ToolTip": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Service\\Implementations\\StudentService.cs",
               "RelativeToolTip": "SchoolProject.Service\\Implementations\\StudentService.cs",
-              "ViewState": "AQIAAFAAAAAAAAAAAAAUwFsAAAAiAAAA",
+              "ViewState": "AQIAAFAAAAAAAAAAAAA0wFsAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-13T14:39:48.489Z",
               "IsPinned": true,
@@ -116,12 +116,11 @@
               "RelativeToolTip": "SchoolProject.Core\\Bases\\Response.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T14:49:47.4Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-20T14:49:47.4Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "StudentQueryHandler.cs",
               "DocumentMoniker": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Features\\Students\\Queries\\Handlers\\StudentQueryHandler.cs",
               "RelativeDocumentMoniker": "SchoolProject.Core\\Features\\Students\\Queries\\Handlers\\StudentQueryHandler.cs",
@@ -142,12 +141,11 @@
               "RelativeToolTip": "SchoolProject.Api\\Controllers\\StudentController.cs",
               "ViewState": "AQIAAB8AAAAAAAAAAAAmwDcAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T15:00:05.383Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-13T15:00:05.383Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "QueryableExtensions.cs",
               "DocumentMoniker": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Wrappers\\QueryableExtensions.cs",
               "RelativeDocumentMoniker": "SchoolProject.Core\\Wrappers\\QueryableExtensions.cs",
@@ -155,12 +153,11 @@
               "RelativeToolTip": "SchoolProject.Core\\Wrappers\\QueryableExtensions.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAAwBsAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T10:48:19.422Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-19T10:48:19.422Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "PaginatedResponse.cs",
               "DocumentMoniker": "C:\\Ghani\\CVProjects\\SchoolProject\\SchoolProject.Core\\Wrappers\\PaginatedResponse.cs",
               "RelativeDocumentMoniker": "SchoolProject.Core\\Wrappers\\PaginatedResponse.cs",
@@ -168,8 +165,7 @@
               "RelativeToolTip": "SchoolProject.Core\\Wrappers\\PaginatedResponse.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAkwBMAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T10:12:14.824Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-19T10:12:14.824Z"
             },
             {
               "$type": "Document",
@@ -181,8 +177,7 @@
               "RelativeToolTip": "SchoolProject.Core\\Bases\\ResponseHandler.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T14:52:22.151Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-13T14:52:22.151Z"
             },
             {
               "$type": "Document",
@@ -194,8 +189,7 @@
               "RelativeToolTip": "SchoolProject.Service\\Abstracts\\IStudentService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwA4AAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T14:37:54.151Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-13T14:37:54.151Z"
             },
             {
               "$type": "Document",
@@ -207,8 +201,7 @@
               "RelativeToolTip": "SchoolProject.Data\\AppMeatData\\Routing.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T15:02:52.778Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-13T15:02:52.778Z"
             },
             {
               "$type": "Document",
@@ -220,8 +213,7 @@
               "RelativeToolTip": "SchoolProject.Core\\Features\\Students\\Queries\\Results\\GetStudentsPaginated.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAQAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T12:52:14.768Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-19T12:52:14.768Z"
             },
             {
               "$type": "Document",
@@ -233,8 +225,7 @@
               "RelativeToolTip": "SchoolProject.Core\\Features\\Students\\Queries\\Models\\GetStudentsPaginatedQuery.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T12:51:09.858Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-19T12:51:09.858Z"
             },
             {
               "$type": "Document",
@@ -246,8 +237,7 @@
               "RelativeToolTip": "SchoolProject.Core\\Features\\Students\\Queries\\Models\\GetStudentByIdQuery.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T12:51:20.943Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-19T12:51:20.943Z"
             },
             {
               "$type": "Document",
