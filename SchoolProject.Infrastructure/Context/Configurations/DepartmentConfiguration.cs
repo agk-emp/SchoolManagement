@@ -8,10 +8,12 @@ namespace SchoolProject.Infrastructure.Context.Configurations
     {
         public void Configure(EntityTypeBuilder<Department> builder)
         {
-            builder.HasKey(d=>d.DID);
+            builder.HasKey(d => d.DID);
             builder.Property(d => d.DID)
                 .ValueGeneratedOnAdd();
-            builder.Property(d => d.DName)
+            builder.Property(d => d.DNameEn)
+                .HasMaxLength(500);
+            builder.Property(d => d.DNameAr)
                 .HasMaxLength(500);
         }
     }

@@ -1,6 +1,6 @@
 ﻿namespace SchoolProject.Data.Common
 {
-    public class GenericStudentLocalizableEntity
+    public class GenericLocalizableEntity
     {
         public string GetLocalizedName(string inputAr, string inputEn)
         {

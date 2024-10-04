@@ -32,7 +32,7 @@ namespace SchoolProject.Core.Features.Students.Queries.Handlers
         {
             var students = await _studentService.GetAllStudentsAsync();
             var mappedStudents = _mapper.Map<List<GetStudentList>>(students);
-            return Success(mappedStudents);
+            return Success(mappedStudents, new { Count = students.Count });
         }
 
         public async Task<Response<GetStudentById>> Handle(GetStudentByIdQuery request, CancellationToken cancellationToken)
@@ -49,13 +49,15 @@ namespace SchoolProject.Core.Features.Students.Queries.Handlers
         public async Task<PaginatedResponse<GetStudentsPaginated>> Handle(GetStudentsPaginatedQuery request, CancellationToken cancellationToken)
         {
             Expression<Func<Student, GetStudentsPaginated>> mappingSql = e => new GetStudentsPaginated(
-                e.StudID, e.GetLocalizedName(e.NameAr, e.NameEn), e.Address, e.Department.DName);
+                e.StudID, e.GetLocalizedName(e.NameAr, e.NameEn), e.Address, e.Department.GetLocalizedName(e.Department.DNameAr, e.Department.DNameEn));
 
             var query = await _studentService.FilterStudents(request.Search,
                 request.OrderBy)
                 .Select(mappingSql)
                 .ToPaginatedResult(request.PageNumber,
                 request.PageSize);
+
+            query.Meta = new { CurrentPageCount = query.Data.Count };
 
             return query;
         }

@@ -105,7 +105,7 @@ namespace SchoolProject.Service.Implementations
                         queryable = queryable.OrderBy(stud => stud.Address); break;
 
                     case StudentOrderingEnum.DepartmentName:
-                        queryable = queryable.OrderBy(stud => stud.Department.DName); break;
+                        queryable = queryable.OrderBy(stud => stud.Department.GetLocalizedName(stud.Department.DNameAr, stud.Department.DNameEn)); break;
                 }
             }
 

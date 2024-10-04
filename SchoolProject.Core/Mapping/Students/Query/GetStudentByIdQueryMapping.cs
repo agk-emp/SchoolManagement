@@ -11,7 +11,7 @@ namespace SchoolProject.Core.Mapping.Students
             CreateMap<Student, GetStudentById>()
                 .ForMember(dst => dst.DepartmentName, opt =>
                 {
-                    opt.MapFrom(src => src.Department.DName);
+                    opt.MapFrom(src => src.Department.GetLocalizedName(src.Department.DNameAr, src.Department.DNameEn));
                 })
                 .ForMember(dst => dst.Name, opt =>
                 {

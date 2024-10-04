@@ -2,7 +2,7 @@
 
 namespace SchoolProject.Data.Entities
 {
-    public class Student : GenericStudentLocalizableEntity
+    public class Student : GenericLocalizableEntity
     {
         public int StudID { get; set; }
         public string NameEn { get; set; }
