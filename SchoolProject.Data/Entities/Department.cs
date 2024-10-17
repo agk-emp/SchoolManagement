@@ -11,8 +11,8 @@ namespace SchoolProject.Data.Entities
             Instructors = new HashSet<Instructor>();
         }
         public int DID { get; set; }
-        public string DNameEn { get; set; }
-        public string DNameAr { get; set; }
+        public string? DNameEn { get; set; }
+        public string? DNameAr { get; set; }
         public int? InsManager { get; set; }
 
         public virtual ICollection<Student> Students { get; set; }
