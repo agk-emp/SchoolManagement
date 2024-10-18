@@ -41,14 +41,14 @@ namespace SchoolProject.Core.Features.Students.Validations
                 .MustAsync(async (model, key, CancellationToken) =>
                 {
                     return !await _studentService
-                    .DoesExistWithNameExcludeSelf(key, model.id);
+                    .DoesExistWithNameArExcludeSelf(key, model.id);
                 }).WithMessage(_localizer[SharedResourcesKeys.AlreadyExists, _localizer[SharedResourcesKeys.PropertyValue]]);
 
             RuleFor(stud => stud.EditStudentCommandBody.NameEn)
                 .MustAsync(async (model, key, CancellationToken) =>
                 {
                     return !await _studentService
-                    .DoesExistWithNameExcludeSelf(key, model.id);
+                    .DoesExistWithNameEnExcludeSelf(key, model.id);
                 }).WithMessage(_localizer[SharedResourcesKeys.AlreadyExists, _localizer[SharedResourcesKeys.PropertyValue]]);
         }
     }

@@ -10,7 +10,7 @@
         }
         public int SubID { get; set; }
         public string SubjectName { get; set; }
-        public DateTime Period { get; set; }
+        public int? Period { get; set; }
         public virtual ICollection<StudentSubject> StudentsSubjects { get; set; }
         public virtual ICollection<DepartmetSubject> DepartmetsSubjects { get; set; }
         public virtual ICollection<Ins_Subject> Ins_Subjects { get; set; }

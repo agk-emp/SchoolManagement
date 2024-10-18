@@ -25,10 +25,10 @@ namespace SchoolProject.Service.Implementations
             await _studentRepository.UpdateAsync(student);
         }
 
-        public async Task<bool> DoesExistWithName(string name)
+        public async Task<bool> DoesExistWithNameEn(string name)
         {
             var studentChecker = await _studentRepository.GetTableNoTracking()
-                .FirstOrDefaultAsync(stud => stud.NameAr == name || stud.NameEn == name);
+                .FirstOrDefaultAsync(stud => stud.NameEn == name);
 
             if (studentChecker is null)
             {
@@ -37,11 +37,36 @@ namespace SchoolProject.Service.Implementations
             return true;
         }
 
-        public async Task<bool> DoesExistWithNameExcludeSelf(string name, int id)
+        public async Task<bool> DoesExistWithNameAr(string name)
         {
             var studentChecker = await _studentRepository.GetTableNoTracking()
-                .FirstOrDefaultAsync(stud => (stud.NameEn == name || stud.NameEn == name) &&
-                stud.StudID != id);
+                .FirstOrDefaultAsync(stud => stud.NameAr == name);
+
+            if (studentChecker is null)
+            {
+                return false;
+            }
+            return true;
+        }
+
+        public async Task<bool> DoesExistWithNameEnExcludeSelf(string name, int id)
+        {
+            var studentChecker = await _studentRepository.GetTableNoTracking()
+                 .FirstOrDefaultAsync(stud => stud.NameEn == name &&
+                 stud.StudID != id);
+
+            if (studentChecker is null)
+            {
+                return false;
+            }
+            return true;
+        }
+
+        public async Task<bool> DoesExistWithNameArExcludeSelf(string name, int id)
+        {
+            var studentChecker = await _studentRepository.GetTableNoTracking()
+                 .FirstOrDefaultAsync(stud => stud.NameAr == name &&
+                 stud.StudID != id);
 
             if (studentChecker is null)
             {
