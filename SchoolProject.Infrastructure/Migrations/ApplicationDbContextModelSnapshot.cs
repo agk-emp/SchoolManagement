@@ -199,8 +199,11 @@ namespace SchoolProject.Infrastructure.Migrations
                     b.Property<int?>("Period")
                         .HasColumnType("int");
 
-                    b.Property<string>("SubjectName")
-                        .IsRequired()
+                    b.Property<string>("SubjectNameAr")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("SubjectNameEn")
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
