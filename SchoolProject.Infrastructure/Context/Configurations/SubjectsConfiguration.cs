@@ -12,8 +12,11 @@ namespace SchoolProject.Infrastructure.Context.Configurations
             builder.Property(s => s.SubID)
                 .ValueGeneratedOnAdd();
 
-            builder.Property(s => s.SubjectName)
+            builder.Property(s => s.SubjectNameEn)
                 .HasMaxLength(500);
+
+            builder.Property(s => s.SubjectNameAr)
+               .HasMaxLength(500);
 
             builder.Property(s => s.Period)
                 .IsRequired(false);

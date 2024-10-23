@@ -16,5 +16,6 @@ namespace SchoolProject.Service.Abstracts
         Task<bool> DoesExistWithNameArExcludeSelf(string name, int id);
         Task DeleteStudent(Student student);
         IQueryable<Student> FilterStudents(string? search, StudentOrderingEnum? orderBy);
+        IQueryable<Student> GetStudentsByDepartmentId(int departmentId);
     }
 }

@@ -1,6 +1,8 @@
-﻿namespace SchoolProject.Data.Entities
+﻿using SchoolProject.Data.Common;
+
+namespace SchoolProject.Data.Entities
 {
-    public class Instructor
+    public class Instructor : GenericLocalizableEntity
     {
         public int InsId { get; set; }
         public string? ENameAr { get; set; }

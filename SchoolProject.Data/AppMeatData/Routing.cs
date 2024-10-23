@@ -20,5 +20,12 @@
             public const string Delete = studentVersionOneRoute + "Delete/" + singleRoute;
             public const string GetPaginated = studentVersionOneRoute + "Paginated";
         }
+
+        public static class DepartmentRouting
+        {
+            public const string prefix = "Department";
+            public const string departmentVersionOneRoute = rootVersionOne + "/" + prefix + "/";
+            public const string GetById = departmentVersionOneRoute + "Id";
+        }
     }
 }
