@@ -15,6 +15,11 @@ namespace SchoolProject.Infrastructure.Context.Configurations
                 .HasMaxLength(500);
             builder.Property(d => d.DNameAr)
                 .HasMaxLength(500);
+
+            builder.HasOne(st => st.Instructor)
+                .WithOne(d => d.departmentManager)
+                .HasForeignKey<Department>(dep => dep.InsManager)
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }

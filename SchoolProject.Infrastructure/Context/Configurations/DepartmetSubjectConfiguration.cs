@@ -8,17 +8,15 @@ namespace SchoolProject.Infrastructure.Context.Configurations
     {
         public void Configure(EntityTypeBuilder<DepartmetSubject> builder)
         {
-            builder.HasKey(ds => ds.DeptSubID);
-            builder.Property(ds => ds.DeptSubID).
-                ValueGeneratedOnAdd();
+            builder.HasKey(ds => new { ds.DID, ds.SubID });
 
             builder.HasOne(ds => ds.Department)
                 .WithMany(d => d.DepartmentSubjects)
-                .HasForeignKey(ds=>ds.DID);
+                .HasForeignKey(ds => ds.DID);
 
-            builder.HasOne(ds=>ds.Subjects)
-                .WithMany(s=>s.DepartmetsSubjects)
-                .HasForeignKey(s=>s.SubID);
+            builder.HasOne(ds => ds.Subjects)
+                .WithMany(s => s.DepartmetsSubjects)
+                .HasForeignKey(s => s.SubID);
         }
     }
 }

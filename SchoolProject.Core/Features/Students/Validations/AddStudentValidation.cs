@@ -42,12 +42,12 @@ namespace SchoolProject.Core.Features.Students.Validations
         {
             RuleFor(stud => stud.NameAr)
                 .MustAsync(async (Key, CancellationToken) =>
-                !await _studentService.DoesExistWithName(Key))
+                !await _studentService.DoesExistWithNameAr(Key))
                 .WithMessage(_localizer[SharedResourcesKeys.AlreadyExists, _localizer[SharedResourcesKeys.PropertyValue]]);
 
             RuleFor(stud => stud.NameEn)
                 .MustAsync(async (Key, CancellationToken) =>
-                !await _studentService.DoesExistWithName(Key))
+                !await _studentService.DoesExistWithNameEn(Key))
                 .WithMessage(_localizer[SharedResourcesKeys.AlreadyExists, _localizer[SharedResourcesKeys.PropertyValue]]);
         }
     }
