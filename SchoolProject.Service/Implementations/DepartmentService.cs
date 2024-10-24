@@ -27,5 +27,11 @@ namespace SchoolProject.Service.Implementations
 
             return department;
         }
+
+        public async Task<bool> DoesExistWithId(int id)
+        {
+            return await _departmentRepository.GetTableAsTracking()
+                .AnyAsync(dept => dept.DID == id);
+        }
     }
 }

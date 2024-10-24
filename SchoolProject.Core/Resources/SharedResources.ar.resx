@@ -150,6 +150,9 @@
   <data name="Unauthorized" xml:space="preserve">
     <value>غير مسموح لك اتمام هذه المهمة</value>
   </data>
+  <data name="UnAvailableDepartment" xml:space="preserve">
+    <value>هذا القسم غير متاح</value>
+  </data>
   <data name="Unprocessable" xml:space="preserve">
     <value>العملية لم تكتمل</value>
   </data>

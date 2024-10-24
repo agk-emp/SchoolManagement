@@ -8,6 +8,8 @@ namespace SchoolProject.Core.Mapping.Students
         {
             GetStudetsListQueryMapped();
             GetStudentByIdQueryMapping();
+            GetStudentsPaginatedMapped();
+
             AddStudentCommandMapping();
             EditStudentCommandMapping();
         }

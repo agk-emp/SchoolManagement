@@ -15,6 +15,7 @@
         public const string Unauthorized = "Unauthorized";
         public const string Updated = "Updated";
         public const string Unprocessable = "Unprocessable";
+        public const string UnAvailableDepartment = "UnAvailableDepartment";
 
 
         #region validation properties not in file

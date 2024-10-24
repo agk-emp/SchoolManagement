@@ -150,6 +150,9 @@
   <data name="Unauthorized" xml:space="preserve">
     <value>You are not allowed to do this</value>
   </data>
+  <data name="UnAvailableDepartment" xml:space="preserve">
+    <value>This department is unavailable</value>
+  </data>
   <data name="Unprocessable" xml:space="preserve">
     <value>The mission could not be completed</value>
   </data>

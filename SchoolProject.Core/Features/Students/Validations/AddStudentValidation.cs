@@ -10,13 +10,17 @@ namespace SchoolProject.Core.Features.Students.Validations
     {
         private readonly IStudentService _studentService;
         private readonly IStringLocalizer<SharedResources> _localizer;
+        private readonly IDepartmentService _departmentService;
 
-        public AddStudentValidation(IStudentService studentService, IStringLocalizer<SharedResources> localizer)
+        public AddStudentValidation(IStudentService studentService,
+            IStringLocalizer<SharedResources> localizer,
+            IDepartmentService departmentService)
         {
             _studentService = studentService;
             _localizer = localizer;
             AddStudentCommandRules();
             AddCustomValidation();
+            _departmentService = departmentService;
         }
 
 
@@ -36,6 +40,10 @@ namespace SchoolProject.Core.Features.Students.Validations
             RuleFor(stud => stud.Address)
                 .NotEmpty()
                 .NotNull();
+
+            RuleFor(stud => stud.DepartmentID)
+                .NotEmpty().WithMessage(_localizer[SharedResourcesKeys.UnAvailableDepartment])
+                .NotNull().WithMessage(_localizer[SharedResourcesKeys.UnAvailableDepartment]);
         }
 
         private void AddCustomValidation()
@@ -49,6 +57,11 @@ namespace SchoolProject.Core.Features.Students.Validations
                 .MustAsync(async (Key, CancellationToken) =>
                 !await _studentService.DoesExistWithNameEn(Key))
                 .WithMessage(_localizer[SharedResourcesKeys.AlreadyExists, _localizer[SharedResourcesKeys.PropertyValue]]);
+
+            RuleFor(stud => stud.DepartmentID)
+                .MustAsync(async (key, CancellationToken) =>
+                await _departmentService.DoesExistWithId((int)key))
+                .WithMessage(_localizer[SharedResourcesKeys.UnAvailableDepartment]);
         }
     }
 }
