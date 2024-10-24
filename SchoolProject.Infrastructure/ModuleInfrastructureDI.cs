@@ -1,6 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using SchoolProject.Data.Entities.Identity;
 using SchoolProject.Infrastructure.Abstracts;
 using SchoolProject.Infrastructure.Context;
 using SchoolProject.Infrastructure.InfrastructureBases;
@@ -17,6 +19,32 @@ namespace SchoolProject.Infrastructure
             {
                 option.UseSqlServer(configuration.GetConnectionString("dbcontext"));
             });
+
+            services.AddEndpointsApiExplorer();
+
+            services.AddIdentityApiEndpoints<User>(option =>
+            {
+                option.Password.RequireDigit = true;
+                option.Password.RequireLowercase = true;
+                option.Password.RequireNonAlphanumeric = true;
+                option.Password.RequireUppercase = true;
+                option.Password.RequiredLength = 6;
+                option.Password.RequiredUniqueChars = 1;
+
+                // Lockout settings.
+                option.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+                option.Lockout.MaxFailedAccessAttempts = 5;
+                option.Lockout.AllowedForNewUsers = true;
+
+                // User settings.
+                option.User.AllowedUserNameCharacters =
+                "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+";
+                option.User.RequireUniqueEmail = true;
+                option.SignIn.RequireConfirmedEmail = true;
+            })
+        .AddDefaultUI()
+        .AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
+
             services.AddTransient(typeof(IGenericRepository<>),
                 typeof(GenericRepository<>));
             services.AddTransient<IStudentRepository, StudentRepository>();

@@ -10,3 +10,4 @@ C:\Ghani\CVProjects\SchoolProject\SchoolProject.Data\obj\Debug\net8.0\refint\Sch
 C:\Ghani\CVProjects\SchoolProject\SchoolProject.Data\obj\Debug\net8.0\SchoolProject.Data.pdb
 C:\Ghani\CVProjects\SchoolProject\SchoolProject.Data\obj\Debug\net8.0\ref\SchoolProject.Data.dll
 C:\Ghani\CVProjects\SchoolProject\SchoolProject.Data\obj\Debug\net8.0\SchoolProject.Data.sourcelink.json
+C:\Ghani\CVProjects\SchoolProject\SchoolProject.Data\obj\Debug\net8.0\SchoolProject.Data.csproj.AssemblyReference.cache
